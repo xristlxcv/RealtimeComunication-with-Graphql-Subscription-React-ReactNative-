@@ -18,10 +18,10 @@ import { getMainDefinition } from "apollo-utilities";
 //   link: new HttpLink({ uri: "http://192.168.2.6:4000/graphql" }),
 //   cache: new InMemoryCache()
 // });
-const httpLink = new HttpLink({ uri: "http://192.168.2.5:4000/graphql" });
+const httpLink = new HttpLink({ uri: "http://X.X.X.X:4000/graphql" });
 
 const wsLink = new WebSocketLink({
-  uri: `ws://192.168.2.5:4000/graphql`,
+  uri: `ws://X.X.X.X:4000/graphql`,
   options: {
     reconnect: true
   }
